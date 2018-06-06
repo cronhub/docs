@@ -6,6 +6,10 @@ module.exports = {
     lastUpdated: "Last Updated",
     editLinks: true,
     docsDir: "docs",
+    head: [
+      ['link', { rel: 'icon', href: `/logo.png` }],
+      ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ],
     serviceWorker: true,
     nav: [
       { text: "Home", link: "/" },

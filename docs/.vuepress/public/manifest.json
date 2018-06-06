@@ -1,0 +1,11 @@
+{
+  "name": "Cronhub Docs",
+  "short_name": "Cronhub Docs",
+  "theme_color": "#4C3DC4",
+  "background_color": "#2196f3",
+  "display": "browser",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": null,
+  "splash_pages": null
+}
