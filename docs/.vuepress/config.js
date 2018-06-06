@@ -7,7 +7,7 @@ module.exports = {
     editLinks: true,
     docsDir: "docs",
     head: [
-      ['link', { rel: 'icon', href: `/logo.png` }],
+      ['link', { rel: 'icon', 'sizes': '32x32', href: `/favicon-32x32.png` }],
       ['link', { rel: 'manifest', href: '/manifest.json' }],
     ],
     serviceWorker: true,
