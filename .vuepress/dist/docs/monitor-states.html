@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Monitors</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/5.styles.c4c15437.css" as="style"><link rel="preload" href="/assets/js/app.d59d1a8f.js" as="script"><link rel="preload" href="/assets/js/0.88306e82.js" as="script"><link rel="prefetch" href="/assets/js/2.89d3f652.js"><link rel="prefetch" href="/assets/js/1.3881f69d.js"><link rel="prefetch" href="/assets/js/3.97895f24.js"><link rel="prefetch" href="/assets/js/4.9ee5ff3a.js">
+    <link rel="stylesheet" href="/assets/css/5.styles.c4c15437.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><!----></div></header><div class="sidebar-mask"></div><div class="sidebar"><!----><!----></div><div class="page"><div class="content"><h1 id="monitors"><a href="#monitors" aria-hidden="true" class="header-anchor">#</a> Monitors</h1><h2 id="states"><a href="#states" aria-hidden="true" class="header-anchor">#</a> States</h2><ul><li><p><code>NEW</code>: Monitor is created but it hasn't received any pings yet.</p></li><li><p><code>UP</code>: Monitor is running on schedule and the last ping hasn't exceeded cron scheduled time + grace period.</p></li><li><p><code>ALERT</code>: Monitor is not running according to the cron schedule. The last ping was after cron scheduled time + grace period.</p></li><li><p><code>PAUSED</code>: Monitor is paused. Monitor will stay paused unless it's manually resumed. It can still receive pings but it will ignore them.</p></li></ul><h2 id="alerts"><a href="#alerts" aria-hidden="true" class="header-anchor">#</a> Alerts</h2><ol><li><p>We send an alert when your monitor receives the first ping. The state of the monitor goes from <code>NEW</code> to <code>OK</code>. This means that your monitor is set to monitor your cron job according to the cron job schedule you defined in the monitor.</p></li><li><p>We send an alert when your monitor goes to the <code>ALERT</code> state. This happens when the monitor doesn't recieve a ping when it supposed to. This mean that your monitor is <strong>not</strong> running on-schedule.</p></li><li><p>When your monitor recovers. When you monitor recovers the new state is <code>OK</code>.</p></li></ol></div><div class="content edit-link"><!----><!----></div><!----></div></div></div>
+    <script src="/assets/js/0.88306e82.js" defer></script><script src="/assets/js/app.d59d1a8f.js" defer></script>
+  </body>
+</html>

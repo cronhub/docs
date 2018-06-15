@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Introduction</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/5.styles.c4c15437.css" as="style"><link rel="preload" href="/assets/js/app.d59d1a8f.js" as="script"><link rel="preload" href="/assets/js/4.9ee5ff3a.js" as="script"><link rel="prefetch" href="/assets/js/2.89d3f652.js"><link rel="prefetch" href="/assets/js/0.88306e82.js"><link rel="prefetch" href="/assets/js/1.3881f69d.js"><link rel="prefetch" href="/assets/js/3.97895f24.js">
+    <link rel="stylesheet" href="/assets/css/5.styles.c4c15437.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><!----></div></header><div class="sidebar-mask"></div><div class="sidebar"><!----><!----></div><div class="page"><div class="content"><h1 id="introduction"><a href="#introduction" aria-hidden="true" class="header-anchor">#</a> Introduction</h1><p>Cronhub is a tool to monitor your cron jobs or any scheduled tasks. It makes it easy to track your cron jobs
+and make sure they run on time. If they fail or run off-schedule
+Cronhub will alert you. You choose how you want to be alerted.</p><h2 id="what-is-a-monitor"><a href="#what-is-a-monitor" aria-hidden="true" class="header-anchor">#</a> What is a monitor?</h2><p>For each job, you need to create a monitor. The schedule of your cron and the created monitor should match.
+For instance, if you have an hourly running job
+on your server you should create a monitor and choose the cron schedule to &quot;Hourly&quot;.</p><h2 id="what-is-a-monitor-ping-url"><a href="#what-is-a-monitor-ping-url" aria-hidden="true" class="header-anchor">#</a> What is a monitor ping URL?</h2><p>When you create a new monitor on Cronhub we generate a
+unique ping URL for you. It looks like this:</p><div class="language-bash extra-class"><pre class="language-bash"><code> https://cronhub.io/ping/1f5e3410-254c-11e8-b61d-55875966d031
+</code></pre></div><p>You will need to make an HTTP request (let's call it a ping) from your cron job every time it runs. After
+receiving the first ping the monitor is set. It will start monitoring your job.</p><h2 id="how-does-alerting-work"><a href="#how-does-alerting-work" aria-hidden="true" class="header-anchor">#</a> How does alerting work?</h2><p>If any of your jobs don't run when they should, Cronhub alerts you with the alerting channels you have specified in your monitor. Currently, Cronhub supports Email, Slack and SMS integrations. More integrations are coming!</p></div><div class="content edit-link"><!----><!----></div><!----></div></div></div>
+    <script src="/assets/js/4.9ee5ff3a.js" defer></script><script src="/assets/js/app.d59d1a8f.js" defer></script>
+  </body>
+</html>
