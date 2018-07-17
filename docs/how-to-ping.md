@@ -16,7 +16,7 @@ Below we have an example of a crontab entry that you can add to your system's cr
 * * * * * curl -fsS --retry 3 https://cronhub.io/start/1f5e3410-254c-11e8-b61d-55875966d031; your_script.sh && curl -fsS --retry 3 https://cronhub.io/start/1f5e3410-254c-11e8-b61d-55875966d031
 ```
 ::: tip
-Please not the difference between `;` and `&&`.
+Please note the difference between `;` and `&&`.
 
 `echo "Hello" ; echo "world"` means run `echo "world"` no matter what the exit status of the previous command echo "Hello".
 
