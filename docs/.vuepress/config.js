@@ -44,7 +44,8 @@ function genSidebarConfig(title) {
         "getting-started",
         "how-to-ping",
         "monitor-states",
-        "integrations"
+        "integrations",
+        "public-api"
       ]
     }
   ];
