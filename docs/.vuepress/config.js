@@ -45,7 +45,8 @@ function genSidebarConfig(title) {
         "how-to-ping",
         "monitor-states",
         "integrations",
-        "public-api"
+        "public-api",
+        "community",
       ]
     }
   ];
