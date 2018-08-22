@@ -13,7 +13,7 @@ On your UNIX system, you can run `crontab -l` to display crontab and see if ther
 Below we have an example of a crontab entry that you can add to your system's crontab entry. Of course, you will have to replace the script name as well as the ping URL with your own script and the monitor URL.
 
 ```bash
-* * * * * curl -fsS --retry 3 https://cronhub.io/start/1f5e3410-254c-11e8-b61d-55875966d031; your_script.sh && curl -fsS --retry 3 https://cronhub.io/start/1f5e3410-254c-11e8-b61d-55875966d031
+* * * * * curl -fsS --retry 3 https://cronhub.io/start/1f5e3410-254c-11e8-b61d-55875966d031; your_script.sh && curl -fsS --retry 3 https://cronhub.io/finish/1f5e3410-254c-11e8-b61d-55875966d031
 ```
 ::: tip
 Please note the difference between `;` and `&&`.
@@ -27,12 +27,12 @@ Whereas in case of echo `"Hello " && echo "world"`, `echo "world"` will only run
 
 ```php
 // ping when your job starts
-file_get_contents("http://cronhub.local/start/1f5e3410-254c-11e8-b61d-55875966d031");
+file_get_contents("https://cronhub.io/start/1f5e3410-254c-11e8-b61d-55875966d031");
 
 // your code goes here...
 
 // ping when your job is finished
-file_get_contents("http://cronhub.local/finish/1f5e3410-254c-11e8-b61d-55875966d031");
+file_get_contents("https://cronhub.io/finish/1f5e3410-254c-11e8-b61d-55875966d031");
 ```
 
 ## Bash
@@ -41,12 +41,12 @@ file_get_contents("http://cronhub.local/finish/1f5e3410-254c-11e8-b61d-55875966d
 #!/bin/bash
 
 # ping when your job starts
-curl -fsS --retry 3 http://cronhub.local/start/1f5e3410-254c-11e8-b61d-55875966d031
+curl -fsS --retry 3 https://cronhub.io/start/1f5e3410-254c-11e8-b61d-55875966d031
 
 your_script.sh
 
 # ping when your job is finished
-curl -fsS --retry 3 http://cronhub.local/finish/1f5e3410-254c-11e8-b61d-55875966d031
+curl -fsS --retry 3 https://cronhub.io/finish/1f5e3410-254c-11e8-b61d-55875966d031
 ```
 
 ## Python
@@ -56,7 +56,7 @@ import urllib2
 
 # ping when your job starts
 try:
-  urllib2.urlopen("http://cronhub.local/start/1f5e3410-254c-11e8-b61d-55875966d031"")
+  urllib2.urlopen("https://cronhub.io/start/1f5e3410-254c-11e8-b61d-55875966d031")
 except Exception:
   pass
 
@@ -64,7 +64,7 @@ except Exception:
 
 # ping when your job is finished
 try:
-  urllib2.urlopen("http://cronhub.local/finish/1f5e3410-254c-11e8-b61d-55875966d031"")
+  urllib2.urlopen("https://cronhub.io/finish/1f5e3410-254c-11e8-b61d-55875966d031")
 except Exception:
   pass
 ```
@@ -75,12 +75,12 @@ except Exception:
 var https = require('https');
 
 // ping when your job starts
-https.get("http://cronhub.local/start/1f5e3410-254c-11e8-b61d-55875966d031");
+https.get("https://cronhub.io/start/1f5e3410-254c-11e8-b61d-55875966d031");
 
 // your code goes here...
 
 // ping when your job is finished
-https.get("http://cronhub.local/finish/1f5e3410-254c-11e8-b61d-55875966d031");
+https.get("https://cronhub.io/finish/1f5e3410-254c-11e8-b61d-55875966d031");
 ```
 
 
