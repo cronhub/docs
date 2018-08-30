@@ -13,7 +13,7 @@ module.exports = {
     serviceWorker: true,
     nav: [
       { text: "Home", link: "/" },
-      { text: "cronhub.io", link: "https://cronhub.io" }
+      { text: "cronhub.io", link: "https://cronhub.io?ref=docs" }
     ],
     sidebar: {
       "/": genSidebarConfig("Guide")
