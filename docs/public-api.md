@@ -39,18 +39,10 @@ Example Response
       "grace_period": 2,
       "timezone": "UTC",
       "status": "up",
-      "last_ping": {
-        "date": "2018-08-12 21:01:08.000000",
-        "timezone_type": 3,
-        "timezone": "UTC"
-      },
+      "last_ping": "2018-08-12T21:01:08+00:00",
       "running_time": 1,
       "running_time_unit": "minutes",
-      "created_at": {
-        "date": "2018-08-12 21:00:51.000000",
-        "timezone_type": 3,
-        "timezone": "UTC"
-      }
+      "created_at": "2018-08-21T21:00:51+00:00",
     },
     {
       "name": "My Daily Cron Monitor",
@@ -59,18 +51,10 @@ Example Response
       "grace_period": 20,
       "timezone": "UTC",
       "status": "up",
-      "last_ping": {
-        "date": "2018-08-06 07:19:17.000000",
-        "timezone_type": 3,
-        "timezone": "UTC"
-      },
+      "last_ping": "2018-08-12T21:01:08+00:00",
       "running_time": 2,
       "running_time_unit": "minutes",
-      "created_at": {
-        "date": "2018-08-06 06:55:31.000000",
-        "timezone_type": 3,
-        "timezone": "UTC"
-      }
+      "created_at": "2018-08-21T21:00:51+00:00",
     }
   ]
 }
@@ -103,18 +87,10 @@ Example Response
     "grace_period": 5,
     "timezone": "UTC",
     "status": "up",
-    "last_ping": {
-      "date": "2018-08-15 00:27:30.000000",
-      "timezone_type": 3,
-      "timezone": "UTC"
-    },
+    "last_ping": "2018-08-12T21:01:08+00:00",
     "running_time": null,
     "running_time_unit": null,
-    "created_at": {
-      "date": "2018-08-14 23:21:01.000000",
-      "timezone_type": 3,
-      "timezone": "UTC"
-    }
+    "created_at": "2018-08-21T21:00:51+00:00",
   }
 }
 ```
@@ -163,14 +139,9 @@ Example Response
     "grace_period": 1,
     "timezone": "UTC",
     "status": null,
-    "last_ping": null,
     "running_time": null,
     "running_time_unit": null,
-    "created_at": {
-      "date": "2018-08-14 18:23:29.000000",
-      "timezone_type": 3,
-      "timezone": "UTC"
-    }
+    "created_at": "2018-08-21T21:00:51+00:00",
   }
 }
 ```
@@ -213,14 +184,9 @@ Example Response
     "grace_period": 20,
     "timezone": "UTC",
     "status": "new",
-    "last_ping": null,
     "running_time": null,
     "running_time_unit": null,
-    "created_at": {
-      "date": "2018-08-15 01:03:18.000000",
-      "timezone_type": 3,
-      "timezone": "UTC"
-    }
+    "created_at": "2018-08-21T21:00:51+00:00",
   }
 }
 ```
@@ -262,18 +228,10 @@ Example response
     "schedule": "0 0 * * *",
     "timezone": "UTC",
     "status": "paused",
-    "last_ping": {
-      "date": "2018-08-06 07:19:17.000000",
-      "timezone_type": 3,
-      "timezone": "UTC"
-    },
+    "last_ping": "2018-08-12T21:01:08+00:00",
     "running_time": 2,
     "running_time_unit": "minutes",
-    "created_at": {
-      "date": "2018-08-06 06:55:31.000000",
-      "timezone_type": 3,
-      "timezone": "UTC"
-    }
+    "created_at": "2018-08-21T21:00:51+00:00",
   }
 }
 ```
