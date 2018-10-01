@@ -1,14 +1,12 @@
 # Introduction
 
-Cronhub is a tool to monitor any scheduled task (or let's call it a cron job). It makes it a breeze to keep track of all your cron jobs
-in a single dashboard. You can use Cronhub to get alerts when:
+## What is Cronhub?
+Cronhub is a cloud-based tool to monitor your scheduled jobs (or cron jobs). It makes it very easy to keep track of all your cron jobs in a single dashboard. After integrating your job with a Cronhub monitor we can send you alerts when:
 
-1.  Your job doesn't run on schedule
-2.  Your jobs run longer than expected
+1.  Your job doesn't run on schedule (e.g. you have daily running job but it failed to run)
+2.  Your job runs longer than expected (e.g. your job should finish within a minute but it took an hour to finish)
 
-You can choose how you want to get alerts using any of our integrations for your monitor.
-
-<!-- ## How It Works -->
+Cronhub supports E-mail, Slack, SMS, Webhook and very soon PagerDuty notification channels.
 
 ## What is a monitor?
 
