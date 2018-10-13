@@ -20,13 +20,13 @@ After choosing the channel "Authorize" it and you will go back to Cronhub. Now y
 ## PagerDuty
 Adding a PagerDuty integration is a multi step process. In order to integrate Pagerduty with your Cronhub account, you should follow these steps
 
-1. Go to the [Pagerduty](https://cronhub.io/settings/integrations/pagerduty) page under your settings.
+1. Go to the [PagerDuty](https://cronhub.io/settings/integrations/pagerduty) page under your settings.
 
-2. When you're on the Pagerduty integration page you will see "Alert with PagerDuty" green button (see the screenshot below). Click on the button.
+2. When you're on the PagerDuty integration page you will see "Alert with PagerDuty" green button (see the screenshot below). Click on the button.
 
 ![Alert with PagerDuty](./pd-integration-step-1.png)
 
-3. When you click on "Alert with PagerDuty" it will take you to the Pagerduty login screen. You should provide your credentials and click **Authorize integration** to allow Crohub to integrate with Pagerduty.
+3. When you click on "Alert with PagerDuty" it will take you to the PagerDuty login screen. You should provide your credentials and click **Authorize integration** to allow Cronhub to integrate with PagerDuty.
 
 ![Authorize integration with Cronhub](./pd-integration-step-2.png)
 
@@ -34,12 +34,12 @@ Adding a PagerDuty integration is a multi step process. In order to integrate Pa
 
 ![Configure the Cronhub Integration](./pd-integration-step-3.png)
 
-4. Now when you back on Cronhub you should see all your PagerDuty service integrations.
+4. Now when you're back to Cronhub you should see all your PagerDuty service integrations.
 
-![Pagerduty Cronhub Integration](./pd-integration-step-4.png)
+![PagerDuty Cronhub Integration](./pd-integration-step-4.png)
 
-5. Cronhub will trigger an incident in Pagerduty when monitors fail and also mark them as resolved when the monitors recover.
+5. Cronhub can trigger an incident on PagerDuty when monitors fail and also mark them as resolved when the monitors recover. 
 
 
-If you want to change your Pagerduty integration then you should remove it first and theb go over the above steps again.
+If you want to change your PagerDuty integration then you should remove it first and then go over the above steps again.
 
