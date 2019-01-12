@@ -7,8 +7,8 @@ module.exports = {
     editLinks: true,
     docsDir: "docs",
     head: [
-      ['link', { rel: 'icon', 'sizes': '32x32', href: `/favicon-32x32.png` }],
-      ['link', { rel: 'manifest', href: '/manifest.json' }],
+      ["link", { rel: "icon", sizes: "32x32", href: `/favicon-32x32.png` }],
+      ["link", { rel: "manifest", href: "/manifest.json" }]
     ],
     serviceWorker: true,
     nav: [
@@ -31,7 +31,10 @@ module.exports = {
     // custom text for edit link. Defaults to "Edit this page"
     editLinkText: "Help us improve this page!"
   },
-  ga: "UA-120470331-1",
+  markdown: {
+    lineNumbers: true
+  },
+  ga: "UA-120470331-1"
 };
 
 function genSidebarConfig(title) {
@@ -46,7 +49,8 @@ function genSidebarConfig(title) {
         "monitor-states",
         "integrations",
         "public-api",
-        "community",
+        "cronhub-cli",
+        "community"
       ]
     }
   ];
