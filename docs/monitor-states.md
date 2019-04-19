@@ -16,6 +16,6 @@
 
 1. We send an alert when your monitor receives the first ping. The state of the monitor goes from `NEW` to `OK` or `RUNNING` depending on the type of the ping.  This means that your monitor is set to monitor your cron job according to the cron job schedule and defined running time.
 
-2. We send an alert when your monitor goes to the `ALERT` state. This happens when the monitor doesn't recieve a ping on schedule or it runs longer than it supposed to.
+2. We send an alert when your monitor goes to the `ALERT` state. This happens when the monitor doesn't recieve a ping on schedule or it runs longer than it supposed to. You can manually trigger alert by hitting `/fail` endpoint.
 
 3. When your monitor recovers. When your monitor recovers the new state is `OK`.

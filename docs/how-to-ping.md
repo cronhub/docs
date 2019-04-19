@@ -1,13 +1,15 @@
 # How to Ping
 The Ping API is an easy way to integrate your scheduled jobs with Cronhub monitors.
 
-In order to integrate your job with a Cronhub monitor, you need to ping from your cron job every time it runs. The ping can be any HTTP request. If you only want to monitor the schedule of your job then you need to ping only once after your job has successfully run. However, If you want to monitor the schedule as well as the running time you need to ping twice, when your job starts and when your job is finished. This way Cronhub will be able to track the running time (or processing time) of your job and alert you if it takes longer than expected to finish.
+**To integrate your job with a Cronhub monitor, you need to ping from your cron job every time it runs.**
+
+The ping can be any HTTP request. If you only want to monitor the schedule of your job, then you need to ping only once after your job has successfully run. However, If you're going to monitor the schedule as well as the running time you need to ping twice, when your job starts and when your job finishes. This way Cronhub will be able to track the running time (or processing time) of your job and alert you if it takes longer than expected to finish.
 
 ## Ping API
 | Endpoint        | Description  |
 | ------------- |:-------------:|
-| `https://cronhub.io/ping/<monitor-uuid>`  | Use this endpoint if you only want to monitor the successful runs of your job on schedule. | 
-| `https://cronhub.io/start/<monitor-uuid>`      | Use this endpoint to acknowledge the start of your job. Use this endpoint if you additionally want to monitor the running running time of your job.      |  
+| `https://cronhub.io/ping/<monitor-uuid>`  | Use this endpoint if you only want to monitor the successful runs of your job on schedule. |
+| `https://cronhub.io/start/<monitor-uuid>`      | Use this endpoint to acknowledge the start of your job. Use this endpoint if you additionally want to monitor the running running time of your job.      |
 | `https://cronhub.io/finish/<monitor-uuid>`  | Use this endpoint to acknowledge the finish of your job. Use this endpoint if you additionally want to monitor the running running time of your job.|
 | `https://cronhub.io/fail/<monitor-uuid>`  | Use this endpoint to acknowledge the failure of your job. After pinging this endpoint Cronhub will change the state of your monitor to "ALERT" and notify you or your team. |
 
@@ -16,9 +18,9 @@ Below I have some handy examples that you can use for integration. I've started 
 
 ## Crontab
 
-Crontab is a UNIX program that helps you to communicate with the cron deamon on a unix based system. The cron daemon is a long-running process that runs commands at specific dates and times. In order to tell cron daemon what commands it should run and when you need crontab entries. 
+Crontab is a UNIX program that helps you to communicate with the cron deamon on a unix based system. The cron daemon is a long-running process that runs commands at specific dates and times. In order to tell cron daemon what commands it should run and when you need crontab entries.
 
-On your UNIX system, you can run `crontab -l` to display crontab and see if there are any scheduled tasks. Run `crontab -e` to edit the crontab. 
+On your UNIX system, you can run `crontab -l` to display crontab and see if there are any scheduled tasks. Run `crontab -e` to edit the crontab.
 
 Below we have an example of a crontab entry that you can add to your system's crontab entry. Of course, you will have to replace the script name as well as the ping URL with your own script and the monitor URL.
 

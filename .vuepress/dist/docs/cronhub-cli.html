@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cronhub CLI 🆕</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.eecf6a6a.css" as="style"><link rel="preload" href="/assets/js/app.3e662c8c.js" as="script"><link rel="preload" href="/assets/js/6.f1293ffd.js" as="script"><link rel="prefetch" href="/assets/js/10.f98df82d.js"><link rel="prefetch" href="/assets/js/11.053e66b3.js"><link rel="prefetch" href="/assets/js/2.503b399d.js"><link rel="prefetch" href="/assets/js/3.9f76cbaa.js"><link rel="prefetch" href="/assets/js/4.75cd80fa.js"><link rel="prefetch" href="/assets/js/5.ef30fa2f.js"><link rel="prefetch" href="/assets/js/7.52c1381d.js"><link rel="prefetch" href="/assets/js/8.2c453139.js"><link rel="prefetch" href="/assets/js/9.aca4836d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.eecf6a6a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><!---->  <!----> </div> <div class="page"> <div class="content"><h1 id="cronhub-cli-🆕"><a href="#cronhub-cli-🆕" aria-hidden="true" class="header-anchor">#</a> Cronhub CLI 🆕</h1> <p>Use Cronhub command-line tool to manage your monitors on Cronhub. Using the CLI, you can list all your monitors, get a specific monitor and easily make pings to your Cronhub monitors.</p> <p>Very soon, we plan to make the CLI the easiest way to integrate your system cron jobs with Cronhub monitors and keep them in sync. It means less manual work and more automation. Cool eh?</p> <p></p><div class="table-of-contents"><ul><li><a href="#install-the-cli-binary-using-curl">Install the CLI binary using curl</a><ul><li><a href="#linux">Linux</a></li><li><a href="#macos">macOS</a></li></ul></li><li><a href="#configure-the-cli">Configure the CLI</a></li><li><a href="#contribute">Contribute</a></li></ul></div><p></p> <div class="language-sh extra-class"><pre class="language-text"><code>Usage: cronhub [OPTIONS] COMMAND [ARGS]...
+
+  A CLI interface that works with Cronhub.
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+
+Commands:
+  config    Save your Cronhub API key in $HOME/.cronhub.
+  monitor   Get the monitor by its UUID.
+  monitors  List all your existing monitors.
+  ping      Ping the monitor using its UUID.
+</code></pre></div><h2 id="install-the-cli-binary-using-curl"><a href="#install-the-cli-binary-using-curl" aria-hidden="true" class="header-anchor">#</a> Install the CLI binary using curl</h2> <h3 id="linux"><a href="#linux" aria-hidden="true" class="header-anchor">#</a> Linux</h3> <ol><li>Download the latest release</li></ol> <div class="language-sh extra-class"><pre class="language-text"><code>curl -LO https://s3.amazonaws.com/ch-cli-releases/release/v1.0.0/linux/cronhub
+</code></pre></div><ol start="2"><li>Make the cronhub binary executable</li></ol> <div class="language-sh extra-class"><pre class="language-text"><code>chmod +x ./cronhub
+</code></pre></div><ol start="3"><li>Move the binary in to your PATH.</li></ol> <div class="language-sh extra-class"><pre class="language-text"><code>sudo mv cronhub /usr/local/bin/cronhub
+</code></pre></div><h3 id="macos"><a href="#macos" aria-hidden="true" class="header-anchor">#</a> macOS</h3> <ol><li>Download the latest release</li></ol> <div class="language-sh extra-class"><pre class="language-text"><code>curl -LO https://s3.amazonaws.com/ch-cli-releases/release/v1.0.0/macos/cronhub
+</code></pre></div><ol start="2"><li>Make the cronhub binary executable</li></ol> <div class="language-sh extra-class"><pre class="language-text"><code>chmod +x ./cronhub
+</code></pre></div><ol start="3"><li>Move the binary in to your PATH.</li></ol> <div class="language-sh extra-class"><pre class="language-text"><code>sudo mv cronhub /usr/local/bin/cronhub
+</code></pre></div><h2 id="configure-the-cli"><a href="#configure-the-cli" aria-hidden="true" class="header-anchor">#</a> Configure the CLI</h2> <p>After installing the CLI you should configure it using your Cronhub <a href="https://docs.cronhub.io/public-api.html" target="_blank" rel="noopener noreferrer">Public API<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> key. The key is located in your <a href="https://cronhub.io/settings/api" target="_blank" rel="noopener noreferrer">account settings<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> page.</p> <p>Run the following command to permanently save the API key in <code>$HOME/.cronhub</code> file. You will
+need to run this command only once!</p> <div class="language-sh extra-class"><pre class="language-text"><code>cronhub configure --api-key=&lt;your-api-key&gt;
+</code></pre></div><h2 id="contribute"><a href="#contribute" aria-hidden="true" class="header-anchor">#</a> Contribute</h2> <p>Cronhub CLI is an open source project and accepts contributions. If you use Cronhub and want to contribute then feel free to open a new pull request. You can find the <a href="https://github.com/cronhub-app/cli" target="_blank" rel="noopener noreferrer">source code<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> on Github.</p></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.3e662c8c.js" defer></script><script src="/assets/js/6.f1293ffd.js" defer></script>
+  </body>
+</html>
