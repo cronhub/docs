@@ -9,8 +9,8 @@ The ping can be any HTTP request. If you only want to monitor the schedule of yo
 | Endpoint        | Description  |
 | ------------- |:-------------:|
 | `https://cronhub.io/ping/<monitor-uuid>`  | Use this endpoint if you only want to monitor the successful runs of your job on schedule. |
-| `https://cronhub.io/start/<monitor-uuid>`      | Use this endpoint to acknowledge the start of your job. Use this endpoint if you additionally want to monitor the running running time of your job.      |
-| `https://cronhub.io/finish/<monitor-uuid>`  | Use this endpoint to acknowledge the finish of your job. Use this endpoint if you additionally want to monitor the running running time of your job.|
+| `https://cronhub.io/start/<monitor-uuid>`      | Use this endpoint to acknowledge the start of your job. Use this endpoint if you additionally want to monitor the running time of your job.      |
+| `https://cronhub.io/finish/<monitor-uuid>`  | Use this endpoint to acknowledge the finish of your job. Use this endpoint if you additionally want to monitor the running time of your job.|
 | `https://cronhub.io/fail/<monitor-uuid>`  | Use this endpoint to acknowledge the failure of your job. After pinging this endpoint Cronhub will change the state of your monitor to "ALERT" and notify you or your team. |
 
 ## Making pings
