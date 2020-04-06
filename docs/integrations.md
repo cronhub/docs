@@ -38,7 +38,7 @@ Adding a PagerDuty integration is a multi step process. In order to integrate Pa
 
 ![PagerDuty Cronhub Integration](./pd-integration-step-4.png)
 
-5. Cronhub can trigger an incident on PagerDuty when monitors fail and also mark them as resolved when the monitors recover. 
+5. Cronhub can trigger an incident on PagerDuty when monitors fail and also mark them as resolved when the monitors recover.
 
 
 If you want to change your PagerDuty integration then you should remove it first and then go over the above steps again.

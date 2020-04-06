@@ -10,7 +10,6 @@ module.exports = {
       ["link", { rel: "icon", sizes: "32x32", href: `/favicon-32x32.png` }],
       ["link", { rel: "manifest", href: "/manifest.json" }]
     ],
-    serviceWorker: true,
     nav: [
       { text: "Home", link: "/" },
       { text: "cronhub.io", link: "https://cronhub.io?ref=docs" }
@@ -31,10 +30,19 @@ module.exports = {
     // custom text for edit link. Defaults to "Edit this page"
     editLinkText: "Help us improve this page!"
   },
-  markdown: {
-    lineNumbers: true
+  extendMarkdown(md) {
+    lineNumbers: true;
   },
-  ga: "UA-120470331-1"
+  plugins: [
+    ["@vuepress/google-analytics", { ga: "UA-120470331-1" }],
+    [
+      "@vuepress/pwa",
+      {
+        serviceWorker: true,
+        updatePopup: true
+      }
+    ]
+  ]
 };
 
 function genSidebarConfig(title) {

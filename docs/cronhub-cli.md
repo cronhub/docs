@@ -1,5 +1,5 @@
-# Cronhub CLI 🆕 
-Use Cronhub command-line tool to manage your monitors on Cronhub. Using the CLI, you can list all your monitors, get a specific monitor and easily make pings to your Cronhub monitors. 
+# Cronhub CLI
+Use Cronhub command-line tool to manage your monitors on Cronhub. Using the CLI, you can list all your monitors, get a specific monitor and easily make pings to your Cronhub monitors.
 
 Very soon, we plan to make the CLI the easiest way to integrate your system cron jobs with Cronhub monitors and keep them in sync. It means less manual work and more automation. Cool eh?
 
