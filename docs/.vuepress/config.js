@@ -54,12 +54,13 @@ function genSidebarConfig(title) {
         "",
         "getting-started",
         "how-to-ping",
+        "sending-data-to-cronhub",
         "monitor-states",
         "integrations",
         "public-api",
         "cronhub-cli",
-        "community"
-      ]
-    }
+        "community",
+      ],
+    },
   ];
 }
