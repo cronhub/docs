@@ -7,8 +7,15 @@ We created Cronhub to make scheduling and monitoring of recurring tasks a lot ea
 
 We offer two products that complement each other - Scheduler and Monitoring.
 
+I have recorded a quick demo to show some of the features on Cronhub.
+
+<iframe src="https://player.vimeo.com/video/420809493" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 ## What is Scheduler?
 As the name implies, Scheduler is a scheduling tool. The schedule can be any time interval or cron expression. Within Scheduler, you define a schedule and a target URL. We send an HTTP request to your Target URL according to your schedule. We do not retry the request if your job fails, and we have a timeout of 3 seconds.
+
+
+With Cronhub Scheduler, you can focus on your application, and we handle the scheduling part. Let's say you want to send a daily email to your users. You can work on creating the function that handles the email sending part, and we take care of the whole scheduling logic behind the scenes. You just need to tell us where your function lives and how often you want to run it.
 
 
 ## What is Monitoring?
