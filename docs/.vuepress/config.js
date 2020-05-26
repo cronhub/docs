@@ -52,7 +52,7 @@ function genSidebarConfig(title) {
       collapsable: false,
       children: [
         "",
-        "getting-started",
+        // "getting-started",
         "how-to-ping",
         "sending-data-to-cronhub",
         "monitor-states",
