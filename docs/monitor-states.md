@@ -18,4 +18,4 @@
 
 2. We send an alert when your monitor goes to the `ALERT` state. This happens when the monitor doesn't recieve a ping on schedule or it runs longer than it supposed to. You can manually trigger alert by hitting `/fail` endpoint.
 
-3. When your monitor recovers. When your monitor recovers the new state is `OK`.
+3. When your monitor recovers, the new state is `OK`.
